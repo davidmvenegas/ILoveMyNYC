@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Raleway';
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.home-button {
+    cursor: pointer;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    width: 72.5px;
+    height: 52.5px;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    font-size: 23.5px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 1.75px 1.75px 0px black;
+    letter-spacing: -.025rem;
+    color: #f4f4f4;
+    background-color: #333;
+    box-shadow: .25rem .25rem .25rem rgba(0, 0, 0, 0.25);
+    transition: all .4s;
+    z-index: 100;
+    animation: fadeIn 2s ease-in forwards;
+}
+.home-button:hover {
+    transform: scale(1.035);
+    color: #222;
+    text-shadow: none;
+    background-color: #ddd;
+}
+.section-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #232425;
+    padding: 5rem 8.5rem 0 10rem;
+}
+.section-header {
+    width: 45%;
+    height: 35vh;
+    top: 0;
+    right: 10;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+/* CONTENT */
+.heading-wrapper {
+    position: absolute;
+    width: 37%;
+    bottom: 42.5%;
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-heading {
+    text-align: center;
+    font-size: 5rem;
+    width: 75%;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    text-shadow: .2rem .2rem .4rem rgba(0, 0, 0);
+}
+.section-heading-line {
+    width: 15rem;
+    height: .5rem;
+    background-color: white;
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+    border-radius: 1rem;
+}
+.buttons-wrapper {
+    width: 37.5%;
+    margin-top: 4rem;
+    position: absolute;
+    bottom: 20%;
+    left: 8.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.calls-to-action-btn {
+    height: 6.5rem;
+    width: 23.5rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    transition: all .25s ease;
+}
+.calls-to-action-btn:hover {
+    transform: scale(1.015);
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.description-wrapper {
+    margin-left: 5%;
+    width: 95%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color: #333;
+}
+.description-paragraph {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 800;
+    color: #ddd;
+    border: none;
+    padding:  5rem;
+    text-align: center;
+    text-shadow: 0 0 .25rem rgba(0, 0, 0);
+}
+/* CONTENT */
+
+
+/* VIDEO */
+.video-wrapper {
+    width: 47.5%;
+    height: 45rem;
+    position: absolute;
+    bottom: 10rem;
+    right: 8.5rem;
+    border-radius: .25rem;
+    box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+.video-wrapper:hover .video-controls {
+    transform: translateY(0);
+}
+.video-wrapper:hover .side-video {
+    opacity: 1;
+}
+.side-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .3;
+    transition: opacity .3s;
+}
+.side-video:hover {
+    opacity: 1;
+}
+.video-controls {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(calc(100% - 0.4rem));
+    transition: transform .4s;
+}
+.video-bar-wrapper {
+    width: 100%;
+    height: .7rem;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video-bar {
+    height: 100%;
+    width: 0;
+    background-color: #d30819;
+    transition: width .2s linear;
+}
+.buttons {
+    padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+}
+.buttons button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.buttons i {
+    font-size: 2.8rem;
+    color: white;
+}
+/* VIDEO */
+
+
+/* SPINNER */
+.container {
+    display: none;
+    }
+    .display .spinner-container {
+    opacity: 0;
+    visibility: hidden;
+    }
+    .display .container {
+    display: block;
+    }
+    .spinner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    z-index: 1000;
+    }
+    .circles {
+    width: 16rem;
+    height: 16rem;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    animation: displayCircles 3.5s;
+    }
+    @keyframes displayCircles {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    25% {
+        opacity: 1;
+        visibility: visible;
+    }
+    90% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: visible;
+    }
+    }
+    .circles div {
+    animation: circles 2s cubic-bezier(0.5,0,0.5,1) infinite;
+    transform-origin: 8rem 8rem;
+    }
+    .circles div::after {
+    content: "";
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: -.4rem 0 0 -.4rem;
+    }
+    .circles div:nth-child(1) {
+    animation-delay: -0.036s;
+    }
+    .circles div:nth-child(2) {
+    animation-delay: -0.072s;
+    }
+    .circles div:nth-child(3) {
+    animation-delay: -0.108s;
+    }
+    .circles div:nth-child(4) {
+    animation-delay: -0.144s;
+    }
+    .circles div:nth-child(5) {
+    animation-delay: -0.18s;
+    }
+    .circles div:nth-child(6) {
+    animation-delay: -0.216s;
+    }
+    .circles div:nth-child(7) {
+    animation-delay: -0.252s;
+    }
+    .circles div:nth-child(1)::after {
+    background-image: url(/images/spinners/c.png);
+    background-position: center;
+    background-size: 1.25rem;
+    top: 12.6rem;
+    left: 12.6rem;
+    }
+    .circles div:nth-child(2)::after {
+    background-image: url(/images/spinners/y.png);
+    background-position: center;
+    background-size: 1.25rem;
+    top: 13.6rem;
+    left: 11.2rem;
+    }
+    .circles div:nth-child(3)::after {
+    background-image: url(/images/spinners/n.png);
+    background-position: center;
+    background-size: 1.25rem;
+    top: 14.2rem;
+    left: 9.6rem;
+    }
+    .circles div:nth-child(4)::after {
+    background-image: url(/images/spinners/y.png);
+    background-position: center;
+    background-size: 1.25rem;
+    top: 14.4rem;
+    left: 8rem;
+    }
+    .circles div:nth-child(5)::after {
+    background-image: url(/images/spinners/m.png);
+    background-position: center;
+    background-size: 1.25rem;
+    top: 14.2rem;
+    left: 6.4rem;
+    }
+    .circles div:nth-child(6)::after {
+    background-image: url(/images/spinners/heart.png);
+    background-position: center;
+    background-size: 1.8rem;
+    top: 13.6rem;
+    left: 4.8rem;
+    }
+    .circles div:nth-child(7)::after {
+    background-image: url(/images/spinners/i.png);
+    background-position: center;
+    background-size: 1.25rem;
+    top: 12.6rem;
+    left: 3.4rem;
+    }
+    @keyframes circles {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+    /* SPINNER */
+
+    /* RESPONSIVE */
+@media (max-width: 1500px) {
+    html {
+    font-size: 60%;
+    }
+    #iHateYou {
+    max-width: 95%;
+    }
+    #iHateYouLess {
+    max-width: 97.5%;
+    }
+    #iHateYouMore {
+    max-width: 90%;
+    }
+}
+@media (max-width: 1450px) {
+    html {
+    font-size: 58%;
+    }
+}
+@media (max-width: 1400px) {
+    html {
+    font-size: 56%;
+    }
+    #iHateYou {
+    max-width: 90%;
+    }
+    #iHateYouLess {
+    max-width: 92.5%;
+    }
+    #iHateYouMore {
+    max-width: 80%;
+    }
+}
+@media (max-width: 1350px) {
+    html {
+    font-size: 53.5%;
+    }
+}
+@media (max-width: 1300px) {
+    html {
+    font-size: 51%;
+    }
+    #iHateYou {
+    max-width: 80%;
+    }
+    #iHateYouLess {
+    max-width: 87.5%;
+    }
+    #iHateYouMore {
+    max-width: 70%;
+    }
+}
+@media (max-width: 1250px) {
+    html {
+    font-size: 47.5%;
+    }
+}
+@media (max-width: 1200px) {
+    html {
+    font-size: 44.5%;
+    }
+}
+@media (max-width: 1150px) {
+    html {
+    font-size: 41.5%;
+    }
+}
+@media (max-width: 1100px) {
+    html {
+    font-size: 40%;
+    }
+}
+@media(max-width: 1050px) {
+    html {
+    font-size: 38%;
+    }
+}
+@media (max-width: 1000px) {
+    html {
+    font-size: 36%;
+    }
+}
+@media (max-width: 950px) {
+    html {
+    font-size: 34%;
+    }
+}
+@media (max-width: 900px) {
+    html {
+    font-size: 32%;
+    }
+}
+@media (max-width: 850px) {
+    html {
+    font-size: 30%;
+    }
+}
+@media (max-width: 800px) {
+    html {
+    font-size: 28%;
+    }
+}
+@media (max-width: 750px) {
+    html {
+    font-size: 27%;
+    }
+}
+@media (max-width: 700px) {
+    html {
+    font-size: 26%;
+    }
+}
+@media (max-width: 650px) {
+    html {
+    font-size: 25%;
+    }
+}
+@media (max-width: 600px) {
+    html {
+    font-size: 24%;
+    }
+}
+@media (max-width: 550px) {
+    html {
+    font-size: 23%;
+    }
+}
+@media (max-width: 500px) {
+    html {
+    font-size: 22%;
+    }
+}
+@media (max-width: 450px) {
+    html {
+    font-size: 21%;
+    }
+}
+@media (max-width: 400px) {
+    html {
+    font-size: 20%;
+    }
+}
+@media (max-width: 350px) {
+    html {
+    font-size: 19%;
+    }
+}
+@media (max-width: 300px) {
+    html {
+    font-size: 18%;
+    }
+}
+@media (max-width: 250px) {
+    html {
+    font-size: 17%;
+    }
+}
+@media (max-width: 200px) {
+    html {
+    font-size: 16%;
+    }
+}
+/* RESPONSIVE */

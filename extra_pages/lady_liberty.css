@@ -469,3 +469,168 @@ html {
     opacity: 1;
     transition: 0.7s;
 }
+
+/* RESPONSIVE */
+@media (max-width: 1500px) {
+    html {
+    font-size: 60%;
+    }
+    #iHateYou {
+    max-width: 95%;
+    }
+    #iHateYouLess {
+    max-width: 97.5%;
+    }
+    #iHateYouMore {
+    max-width: 90%;
+    }
+}
+@media (max-width: 1450px) {
+    html {
+    font-size: 58%;
+    }
+}
+@media (max-width: 1400px) {
+    html {
+    font-size: 56%;
+    }
+    #iHateYou {
+    max-width: 90%;
+    }
+    #iHateYouLess {
+    max-width: 92.5%;
+    }
+    #iHateYouMore {
+    max-width: 80%;
+    }
+}
+@media (max-width: 1350px) {
+    html {
+    font-size: 53.5%;
+    }
+}
+@media (max-width: 1300px) {
+    html {
+    font-size: 51%;
+    }
+    #iHateYou {
+    max-width: 80%;
+    }
+    #iHateYouLess {
+    max-width: 87.5%;
+    }
+    #iHateYouMore {
+    max-width: 70%;
+    }
+}
+@media (max-width: 1250px) {
+    html {
+    font-size: 47.5%;
+    }
+}
+@media (max-width: 1200px) {
+    html {
+    font-size: 44.5%;
+    }
+}
+@media (max-width: 1150px) {
+    html {
+    font-size: 41.5%;
+    }
+}
+@media (max-width: 1100px) {
+    html {
+    font-size: 40%;
+    }
+}
+@media(max-width: 1050px) {
+    html {
+    font-size: 38%;
+    }
+}
+@media (max-width: 1000px) {
+    html {
+    font-size: 36%;
+    }
+}
+@media (max-width: 950px) {
+    html {
+    font-size: 34%;
+    }
+}
+@media (max-width: 900px) {
+    html {
+    font-size: 32%;
+    }
+}
+@media (max-width: 850px) {
+    html {
+    font-size: 30%;
+    }
+}
+@media (max-width: 800px) {
+    html {
+    font-size: 28%;
+    }
+}
+@media (max-width: 750px) {
+    html {
+    font-size: 27%;
+    }
+}
+@media (max-width: 700px) {
+    html {
+    font-size: 26%;
+    }
+}
+@media (max-width: 650px) {
+    html {
+    font-size: 25%;
+    }
+}
+@media (max-width: 600px) {
+    html {
+    font-size: 24%;
+    }
+}
+@media (max-width: 550px) {
+    html {
+    font-size: 23%;
+    }
+}
+@media (max-width: 500px) {
+    html {
+    font-size: 22%;
+    }
+}
+@media (max-width: 450px) {
+    html {
+    font-size: 21%;
+    }
+}
+@media (max-width: 400px) {
+    html {
+    font-size: 20%;
+    }
+}
+@media (max-width: 350px) {
+    html {
+    font-size: 19%;
+    }
+}
+@media (max-width: 300px) {
+    html {
+    font-size: 18%;
+    }
+}
+@media (max-width: 250px) {
+    html {
+    font-size: 17%;
+    }
+}
+@media (max-width: 200px) {
+    html {
+    font-size: 16%;
+    }
+}
+/* RESPONSIVE */

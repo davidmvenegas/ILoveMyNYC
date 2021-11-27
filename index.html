@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>I &#10084; MY NYC</title>
     <link rel="shortcut icon" href="https://www.nycgo.com/favicon.ico">
-    <!-- <style>#noscroll{overflow:hidden !important}</style> -->
+    <style>#noscroll{overflow:hidden !important}</style>
 </head>
 <body id="noscroll">
 <!-- SPINNER -->
@@ -357,7 +357,7 @@
 <!-- ACTIVITY_SECTION -->
 <div class="jumper-4"></div>
 <!-- FOOTER -->
-<div class="footer target-footer">
+<div id="more-resources" class="footer target-footer">
     <a id="button8" class="jump-js-section-fourth-button-up">
         <i class="fas fa-arrow-up"></i>
     </a>
@@ -378,12 +378,12 @@
         <div class="other-wrapper">
             <div class="other-list">
                 <div class="one-line">
-                    <a href="#" class="other-link" id="first-box">Volunteer for New York City</a>
-                    <a href="#" class="other-link" id="second-box">Broadway in New York City</a>
+                    <a href="./extra_pages/volunteer.html" class="other-link" id="first-box">Volunteer for New York City</a>
+                    <a href="./extra_pages/broadway.html" class="other-link" id="second-box">Broadway in New York City</a>
                 </div>
                 <div class="two-line">
-                    <a href="#" class="other-link" id="third-box">New York Public Library</a>
-                    <a href="#" class="other-link" id="fourth-box">Museum of the City of New York</a>
+                    <a href="./extra_pages/nyc-library.html" class="other-link" id="third-box">New York Public Library</a>
+                    <a href="./extra_pages/nyc-museum.html" class="other-link" id="fourth-box">Museum of the City of New York</a>
                 </div>
             </div>
         </div>
@@ -412,6 +412,9 @@
     }
     if(window.location.hash === '#about-nyc') {
         setTimeout(() => jump('.target-about', {duration: 0}), 3600)
+    }
+    if(window.location.hash === '#more-resources') {
+        setTimeout(() => jump('.target-footer', {duration: 0}), 3600)
     }
 
     button1.addEventListener('click', () => {
