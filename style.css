@@ -1058,7 +1058,7 @@ html {
 }
 .getting-around-button {
   color: #000;
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .85);
   border: none;
   font-size: 3rem;
   text-transform: uppercase;

@@ -289,83 +289,83 @@ html {
 }
 .bar.basic-si::before {
     width: calc(45% - 1.0rem);
-    background-color: #144552;
+    background-color: #103a45;
 }
 .bar.intermediate-si::before {
     width: calc(95% - 1.0rem);
-    background-color: #0b525b;
+    background-color: #09444c;
 }
 .bar.advanced-si::before {
     width: calc(56.5% - 1.0rem);
-    background-color: #065a60;
+    background-color: #065c62;
 }
 .bar.expert-si::before {
     width: calc(35% - 1.0rem);
-    background-color: #006466;
+    background-color: #038385;
 }
 .bar.basic-bkl::before {
     width: calc(100% - 1.0rem);
-    background-color: #144552;
+    background-color: #103a45;
 }
 .bar.intermediate-bkl::before {
     width: calc(48.5% - 1.0rem);
-    background-color: #0b525b;
+    background-color: #09444c;
 }
 .bar.advanced-bkl::before {
     width: calc(98% - 1.0rem);
-    background-color: #065a60;
+    background-color: #065c62;
 }
 .bar.expert-bkl::before {
     width: calc(92% - 1.0rem);
-    background-color: #006466;
+    background-color: #038385;
 }
 .bar.basic-mht::before {
     width: calc(60% - 1.0rem);
-    background-color: #144552;
+    background-color: #103a45;
 }
 .bar.intermediate-mht::before {
     width: calc(30% - 1.0rem);
-    background-color: #0b525b;
+    background-color: #09444c;
 }
 .bar.advanced-mht::before {
     width: calc(100% - 1.0rem);
-    background-color: #065a60;
+    background-color: #065c62;
 }
 .bar.expert-mht::before {
     width: calc(95% - 1.0rem);
-    background-color: #006466;
+    background-color: #038385;
 }
 .bar.basic-qn::before {
     width: calc(87.5% - 1.0rem);
-    background-color: #144552;
+    background-color: #103a45;
 }
 .bar.intermediate-qn::before {
     width: calc(65% - 1.0rem);
-    background-color: #0b525b;
+    background-color: #09444c;
 }
 .bar.advanced-qn::before {
     width: calc(73% - 1.0rem);
-    background-color: #065a60;
+    background-color: #065c62;
 }
 .bar.expert-qn::before {
     width: calc(76% - 1.0rem);
-    background-color: #006466;
+    background-color: #038385;
 }
 .bar.basic-brx::before {
     width: calc(52.5% - 1.0rem);
-    background-color: #144552;
+    background-color: #103a45;
 }
 .bar.intermediate-brx::before {
     width: calc(82.5% - 1.0rem);
-    background-color: #0b525b;
+    background-color: #09444c;
 }
 .bar.advanced-brx::before {
     width: calc(84% - 1.0rem);
-    background-color: #065a60;
+    background-color: #065c62;
 }
 .bar.expert-brx::before {
     width: calc(94% - 1.0rem);
-    background-color: #006466;
+    background-color: #038385;
 }
 /* SLIDER */
 
