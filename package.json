@@ -1,10 +1,14 @@
 {
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  },
+
   "name":        "jump.js",
   "description": "A modern smooth scrolling library.",
 
-  "main":        "dist/jump.js",
-  "module":      "dist/jump.module.js",
-  "jsnext:main": "dist/jump.module.js",
+  "main":        "jump.js",
+  "module":      "jump.module.js",
+  "jsnext:main": "jump.module.js",
 
   "version": "1.0.2",
   "license": "MIT",
